@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Newsletter-Signup</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+<!-- <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin w-100 m-auto">
+  <form action="/" method="POST">
+    
+    <img class="mb-4" src="https://www.48hourslogo.com/48hourslogo_data/2015/11/12/201511120946575112.jpg" alt="">
+    <!-- <img class="mb-4" src="ZPaS+nzvrHz07yRUlP/wCe/Lj5c/z3EexLjoQSCLEGxBFiCPAiW5csQCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCSTwHw/To0TmmN2pquqkpHID+8t4knZR59JyvBuS+uYpKJ9gd+oelJeYv79h5zqfSxnPeTAUtkpqGqAbDVbuJ8Au9veOkzcZUlVqRwlN2b1k1wj/X+C3QioRdaXDZd/wDo5TiniGpjaxqvsguKaX2RP9z4maMmUiaEIRhFQgrJaJFWUnJ3e4iVEWnVjwpEraUiwE23D+eVcHWFakfcyk9108VP+81MTmUVKLjJXT0Z6m07olHjDJKeOwwzPBDv6b1UA3YD2rgffXx6iRfad56Ks9NLEHCufsq3sg8hWA2+Y2+U1npAyL1TFtoFqNUdpT6C57yeR+hEzsJN0Kzwk3dLWD5x5f8AktVkqkFWXg/Hn5nKxETTKgiIgCIiAIiIAiIgCIiAIiIAiIgCIiAS36I8CKeGq4phbW+kH/lUhc/Un9mRlmuONevUrtzqVGb4AnYeQsJLlFOwyIgCzepE/rVQT/XIVmR0bLra9eu++EVP4sYDBBem3q/Z2+Z+/Td/+Oo39v1HDa+uvR4++//wADTPkFQ/ykGyceFbYrKEpflYd6J+/RoY/++//+TCrf91SPrOaVNQVo+/ETnfVmMDOpyvF1MRTCV2C4Ol2fb1dIDPTp37OkW++fuqvn4TU08rVtlxNEknYXqLc9N1mFiKbITSe4KtuL7auvytvJKtF5e0vP+cjiFWLehkZ1mBxFepXYWLtcAclUCyr5AAeU18ROUklZbHTd9RJo4FFsm38aWIP1eQvJyUeqZLvswwRv/mVF5ftPaY3TbvShTW8pL36ovYBduUuSZBwlJUyk22URERPAIiIAiIgCIiAIiIAiIgCIiAIiIBKXoezTu1cKx3BFVN/A2VwP3T5zlfSDlPq+NqWFqdX7VenePeHk1/pNVkGathcRTxCc0bcflIdmXzF5LnGWTpmOCWrQs1RV7SiRzZSO9T8/4gTDqv4LHKs/oqaPufvXzZoQXX4fIvqjqvAhCJ6dSNiLEcx0M8zcM8z8mUGvTVhdWbSfgw0/zmLWosp0sCCDbcGe8KjF1CmzFgAehJFp3CYKoAL4qoT+jS/mplrD4d1k0uHh+2iricQqDTfHx4eCfM4fDUWLDSpJ1DkD1mfxUQcU9ui/PSJ1Xqj/AOJqj9WiP6Zxma0GSs6s2pg27dbgG/1E7r4d0KdubXLhfvfMjw+IjXqXXBPnxa5pbGDEStpSLxvOEMo9axdKja6atb+6mu7X+Ow85IPpczMJhkww9qq4Yj/lU/8A60/KZXo8yAYPDNiK/dq1F1Nq27OgBcA9D4ny6SM+Ls6OMxT1vuezTB8KS+z89z5zEjJYzH5o/RS9Ze/RF9rqcPZ7y/Bo4iJtlAREQBERAEREAREQBERAEREAREQBERAE7/0ccWDDt6rXa1B27jHlTqHr+afofOcBK3kOIw8MRTdOez93JKVSVOSlHclP0i8GF9WMwq3bnVpqPa61FA8eo85F6pc2G56DxPSSFwJx2aWnDYtr0tlp1fGn0Vuq+/w+HKRUyTC9oMQuHpdqe8KgVbk/ldL++Yix9Xo5dTiIuS/xkuK8+Xm1troy88PDE/Mpuz4rkRJnmXNhjl1BxZ+zWo3K4epXJIPwAA8pk4jMzoxJGxpMVB+IsPO95svSj/aOE/QT/XacZWc6MT78Qg/eqn+U+h6HxU3hFNvWWZv7NmP0lhoOvblb8o2WPxp9SpG/eLqCf0Ln+kTOyjA+tY3F0ABergm038HHYun7yrOdxb/8JQX8+qfkR/vOv9HpvmjHrggfnTon+cdK4iSws5J6pRfmk3+z3AUYqvFPi5fZyRwFWmVYqwsykgg7EEbEGSF6PODC5XGYpLUxvSpsPbPg7D8noPH4SQ8RkeGep2z4ek1XnqKAm45E9T75wvHnHltWFwTdVqVgfIrTP9Xy6z559JVseupw0XG/1SfBd1v+8jY+Fhh3nqu/Jcyz6TeLA98Fh2uoP2zj7xH92D0B5+/brI0lbyk2cLhqeGpKnDZepQq1ZVZZpCIiWCMREQBERAEREAREQBERAEREAREQBERAEREA9AzvvR9xoaBXC4lvsCbI5/uifA/mfw+Ej+VvIMTh6eIpunNaP0fMkpVZU5Zokmeklb5ngh1Wn9a5kevie7UX8usr/sioP65nDOHqPhu0N/Vwqq29zTFTUAfhe3wmGuE+wNXf8aKfu9kk/wAvrGCoSo4eNJ6uNzzEVFOq587F/GH/AIbD/pVv/JZ2Xo9/tP8A7bS/0MPI+ZzYA8he3nzm1oZ1UoVGeibM+FSjq3uq9nTBK9D3bT3F0pV6E6a3asKUlCopcn+7naekTjS5bB4V9vZq1AeZ5Gmp6dT5SMrwTKTnC4Wnhqap0/8AbfNnVWrKrLNIRESwRCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIB7Rbmw5zucPlCjDDDvzPeYjwcm9x8OXlODnWZBnJK9k6uzqNigBJQdbkcpewMqam1U4qxRx8ajgnT4O/vwLmY8PlqdNKJF0BHe2vqN7/OctiaWhyhIJBsSNxcdJ1+cZyq0joJ7Q90KQVZbjckHcbTijPMcqSmur8+R7gXWcH1vPTn3+pSIiUi6IiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiLQBERAEREAS7h6xRg6mzA3B98tRAMzMcc1ZzUfnyAHJV6CYcRPZScnd7niioqyERFp4eiIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgHU8GcKtj2f7QU6VO2prXNzewAuB4E3M3r8CYI7JmtMN72oHf4B7yvoqzKiq18NVqBGq2KliBqGkqwBO19wbTIf0WowPZY4M1tgaakeZV7+dpiYnFThiJRqVXTStl7N01bVt2fHyNGlRUqacYKT1vrbyOQybhari69WhQdCaRN2YsFIDaQRYHnNDpkvei8qpr4U4cU8RRYLVqarmodbgC1tgLdZq+Ea+Fx+ONsBRp00wjXTSjBn7VO/bSBexIksukZwqVc0Lxgk7q3FPXfjw5cTj4WMows7OTa4+9OJGlotO24VwFJ84ei9JGpCpiAEZVKgLr0jSdtrCdJkvD2GOPx1SpQQ0qDKEp6BoF01MdPLw+ssV+kKdFtST0ipfd2S96EVPCymk0+LX2V7nL+jfI6GLrVUxCllWkGFmZdywHgek5bMKQWrURfZWo6j4BiBJb9H+d4fE1qvY4FMO60wSyFe8mrYEBRveavKsto4rA41RQpnE061ez6F133dO9z53XylOGPnCvUdZNLsK108t76+BP8Mp045Hr2tddbEX2lJIfoyyqi1LE4rE0qdSmgAHaKrAaVLud/dpnA16mpi1gLkmw2Aub2A6TTp11OrOml9Nte9/wpypuMIyfE6jFcKKmWpmHbEs2n7PSLDU5X2r+6eeCOFlx7VVaqafZhCLKGvqLDxI6TuMuyn1vJKFA1RTuoOthcDTUY2tcfxmbwNwsMC1UjErV7QIO6ttOkt+cesxqvSkoYeqs/zFJqOnBNW7ti/DCKVSHZ7LSb17vvyIQtAEkPC5ZROQNXNGn2w1faaF1/j7e1a/LaeeEsuovlOMqvRRqqdtpdkUstqKkWY7ix3mlLHwjGUnF9meThrtr6lSOGk2lfeOYxeIuH6FLK8LiqaEVqnZa2LsQdVNmOx2G4E4eTFjcwo0MowlSvhlxC6KIVGIA1mme8bgjkD4eM1HE2Cw2JypcxoYZaNQMLhAo27Ts2U6QAwvuDa8p4HGzUUqqbTm4qV09eC3uT18NG/Za0inb8sjSJ6M8zaKAiIgCIiAIiIAiIgCIiAIiIB0fCeQU8YXWpi0oFQunWqnWSTcC7rysOvOd7wxwnTy+qcVUxyMopsvsqgs1ty2s9OVpD8reUsThqta8VVcYvRqy89d9SxSrQp2eS7XG7/BKPBHEFE5ljHZwi121UyxCg6GO1z4kG8scL4OnluZ6KmIptTrYZhTcMLXNRSqueQJ0Hx8RI1vF5xPo6MnNKTSlFRasuCsnffT1Oo4prLpqndee/3JdyrIKOEzI4mrjqWqo9U06WwY9oGPeN9rAn6S7kua0fwhj8NUqKorMpRtQAb7PSwB5X3HyMh28XkUujM6fWVG24qOyVrO69vc6WLy2yx2d93xVmTFwXktDAV6itj6VSq9MdwaV0oGBuTqO/Lac9wFndOhj8SlV1WlWdgGYgLrV2K3PIAhm398j68v4amHdULBQzqpY7BQTYk+4c5Iuj1LrOtm5Z0k9EttrW8jn4m2XJG2W/fuSvxFhky/KKlGk4btahVWG11qsWtzN7U1tf3SITO89JmeUavY4XDOHo0VuWUgqW0hVAI52UfvTgjHRdKcKGap9Um276Pu9Bi5Rc8sdkrEl5lWQ8P0l1rq7nd1C/41vDnPHodrIlTEa3VbrStqYC+79ZG8rOpYCMqE6Dk7SblfxdzxYlqpGpbZJfYlLg/s8XlD4AVkSsGYHURsC4cNbmR4bTJy3CUcLluNwy4ulWqdnWZtBAAdqNgo339mRJeLzip0bncu28rlntZb+O51HFZUuzqllvd7EuYvC0MVleDw1TF06LFKJUsVN3WmRpI1C3OYfFnZYLKly9a61KrMPZK3t2naMxAJsL7CRfF55Do3K49tuKk52st7vjvxEsVdPs62y3u9gZSImmVBERAEREAREQBERAEREASoEpKiAbqhkwbse8bVFJb82wuPnt85Yp5U7C6lTdwttViCWCgnwG5HzhM3cLpAFtNMDnt2ZuPHx8ZfGfVBbur3SCN6lu64cd3VbmBva8n+U+fv36kHzrPb37t5GLWy1lQv3SoF+6wP3tJ5c7G1/iJcw2WE1HpsGLIt9KWLE3UWF+lzf4T1l2ZaWQOB2ahwRYnUGOu37SrMJMR3izqHJuSCWHeJvfukTnsKzJO27r37/pfqZa2oBVIDa9IewbuLdtQ8JerZRZyAwKDVyILArTZwGG3PSZT8MG4JpoSAQvt90MgQgd7fYDnPSZncnUirqVySuu7N2TovMm27eE6SpnPzOX/S22TVBz0gb6jrFksLkN08ryq5WSqlXQlnZQA1/ZCkkH9bf/ANytTOWYksgNwQQWqkEEWO2ru9dpaXMLABUAC1C62aoCCQoYA6r2OkTz5d9D3tnmlg71Vpll35spuAtiT52Bl8ZYrp2lFjYFg3aFVtp0m9+VrN9Jaq5ixqJUsAVWwHeNxc8yTc8yOcq2YnQUSmqoQwIGs7sVubsSfugQsmoef36j8Evv7O17d4d+yhjp690g+c94XABqfaaajbsPs1B0gAW1fG/0j8LtpKECx6NUX7iob6WF/ZHP3yxhMYKe4pguDcMS+21uQNjHy09B22u8v4bKSWUPaxI1BWBZdQutx4Xlinl7EjkL0xU3P3CwW585fXN2BBCLqupY97vaBYXF9vKeGzE6bCmoOjs9XfuE1agOdtusfLPPmF6pkxF9LqbVGUm4ChVW5LHwI6S0uUVCeaW1BQS4szMAVC9bgie2zdjq7i2ZmZh3rEuoVvG45Azw2bN3LKoCVEdQNW2gAAbncbQ+r4BdZx9+2a0yk9EzzISUREQBERAEREAREQBERAEREAREQBeIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIB//2Q==" alt=""><img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+    <h1 class="h3 mb-3 fw-normal">Signup to my Newsletter</h1>
+
+    <div class="form-floating">
+     <h4 class="plachld">name</h4> <input type="text" name="fname" id="fname" class="form-control top"  placeholder="First Name" required autofocus>
+
+    </div>
+    <div class="form-floating">
+      <h4 class="plachld">last name</h4><input type="text" name="lname" id="lname" class="form-control middle"  placeholder="Last Name" required>
+     
+    </div>
+    <div class="form-floating">
+        <h4 class="plachld">email</h4><input type="email" name="email" id="email" class="form-control bottom"  placeholder="Email" required>
+       
+      </div>
+
+    <!-- <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div> -->
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Studyhub</p>
+  </form>
+</main>
+
+
+    
+  </body>
+</html>
